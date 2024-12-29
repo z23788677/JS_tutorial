@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+
+      function greet(name){name != undefined? console.log(`hello ${name}`): console.log('Hi there')}
+      greet()
+
+      function convertToFahrenheit(celsius){return ((celsius*9) / 5) + 32}
+      function convertToCelsius(fahrenheit){return ((fahrenheit - 32) * 5 /9)}
+      function convertTemperature(degrees, unit)
+      {if (unit == "C"){return ((degrees * 9) / 5) + 32 + "F"}
+        else if (unit == "F"){return ((degrees - 32) * 5 /9 + "C")}}
+      
+      console.log(convertToFahrenheit(25))
+      console.log(convertToCelsius(86))
+      console.log(convertTemperature(86,'F'))
+      
+      function converLength(length, from, to)
+      {if (from == to){return length+" "+from}
+        if (from == "miles" && to == "km"){return (length * 1.6) +" "+ "km"}
+        if (from == "km" && to == "miles"){return (length * 0.6) +" "+ "miles"}
+        if (from == "miles" && to == "ft"){return  (length * 5280) +" "+ "ft"}
+        if (from == "km" && to == "ft"){return (length * 3281) +" "+ "ft"}}
+      console.log(converLength(5,"km","ft"))
+    </script>
+
+    <title>Exercise 7</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    
+  </body>
+</html>

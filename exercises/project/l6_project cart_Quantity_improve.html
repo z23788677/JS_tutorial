@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>lession5 exercises</title>
+    <meta charset = "UTF-8"></meta>
+
+    <style>
+      p {font-family: 微軟正黑體;}
+      button {font-size: 15px}
+    </style>
+
+    <script>
+      let name = "wu1c";
+      const ex_5c_answer = 5 +(2*3) + 9;
+      let tax = ex_5c_answer * 0.1;
+      const total = ex_5c_answer + tax;
+      console.log(name);
+      console.log(`Cost of food:$${ex_5c_answer}`);
+      console.log(`Tax (10%): $${tax}`);
+      console.log(`Total cost:$${total}`);
+
+      let num_Item = 0
+    </script>
+
+  </head>
+  <body>
+    <p>購物車系統:</p>
+    <button onclick="console.log(num_Item)">檢視數量</button>
+    <button onclick="num_Item < 10 ? num_Item += 1:console.log('The cart is full')">加入</button>
+    <button onclick="num_Item < 10 ? num_Item += 2:console.log('The cart is full')">+2</button>
+    <button onclick="num_Item < 10 ? num_Item += 3:console.log('The cart is full')">+3</button>
+    <button onclick="num_Item = 0">清空購物車</button>
+    <button onclick="num_Item < 10 ? num_Item += 4:console.log('The cart is full')">+4</button>
+    <button onclick="num_Item < 10 ? num_Item += 5:console.log('The cart is full')">+5</button>
+    <button onclick="num_Item > 0 ? num_Item -= 1:console.log('Not enough Item')">-1</button>
+    <button onclick="num_Item > 0 ? num_Item -= 2:console.log('Not enough Item')">-2</button>
+    <button onclick="num_Item > 0 ? num_Item -= 3:console.log('Not enough Item')">-3</button>
+  </body>
+</html>
