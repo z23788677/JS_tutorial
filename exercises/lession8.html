@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lession 8</title>
+</head>
+<body>
+  
+</body>
+  <script>
+    const product1 ={
+      name: 'basketball',
+      price: 20.95
+    };
+    const product2 ={
+      name: 'shock',
+      price: 20.95
+    };
+
+    console.log(product1.name);
+    console.log(product1.price);
+
+    //product1.price += 5;
+    console.log(product1.price);
+
+    product1.delivery_time = '3 days';
+
+    console.log(product1.delivery_time);
+
+    function comparePrice(product1, product2){
+      console.log(product1.price)
+      console.log(product2.price)
+      
+      if (product1.price > product2.price)
+      {console.log(`cheapest: ${product2.price}, name: ${product2.name}`)}
+
+      else
+      {console.log(`cheapest: ${product1.price}, name: ${product1.name}`)}
+      
+    }
+
+    function isSameProduct(product1, product2){
+      if (product1.name == product2.name && product1.price == product2.price){return true;}
+      else{return false;}
+      }
+    
+    comparePrice(product1,product2)
+
+    console.log(isSameProduct(product1,product2))
+    console.log('Good Moring'.toLowerCase())
+    console.log(('test'.repeat(2)))
+
+  </script>
+</html>
